@@ -32,14 +32,45 @@ class MyApp extends StatelessWidget {
               Text(
                 'Software Developer',
                 style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.teal[100],
                     fontSize: 20,
                     fontFamily: 'SourceSansPro',
                     letterSpacing: 4),
               ),
               SizedBox(
-                width: double.infinity,
-              )
+                child: Divider(
+                  color: Colors.teal[100],
+                ),
+                width: 160,
+                height: 20,
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                    size: 20,
+                  ),
+                  title: Text(
+                    '+234 703 333 7005',
+                    style: TextStyle(color: Colors.teal[900], fontSize: 20),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'nonsooranye@gmail.com',
+                    style: TextStyle(color: Colors.teal[900], fontSize: 20),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
