@@ -23,9 +23,19 @@ class MyApp extends StatelessWidget {
               Text(
                 "Nonso Oranye",
                 style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 40,
-                    color: Colors.white),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontFamily: 'Pacifico',
+                ),
+              ),
+              Text(
+                'Software Developer',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontFamily: 'SourceSansPro',
+                    letterSpacing: 4),
               ),
               SizedBox(
                 width: double.infinity,
